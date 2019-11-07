@@ -86,7 +86,7 @@ if [ "$1" = 'redis-cluster' ]; then
       done
     fi
 
-    tail -f /var/log/supervisor/redis*.log
+    echo "Redis cluster running"
 else
   exec "$@"
 fi
